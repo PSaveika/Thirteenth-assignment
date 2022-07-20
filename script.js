@@ -108,20 +108,4 @@ for(var x of cityArray){
         console.log("-----------------------------------------------")
     }
 
-//Papildomai
 
-var button = document.querySelector('.bnt');
-var jsDiv = document.querySelector(".js-text");
-
-
-function funkcija() {
-    for(var x of cityArray) {
-        let pElem = document.createElement("p");
-        areaPerPerson = x.stateArea*1000000/x.populationNumber;
-        var formattedArea = x.stateArea.toLocaleString('en-US')
-        pElem.innerText = `Šalis: ${x.cityName}, joje gyvena: ${(x.populationNumber / 1000000).toFixed(2)} mln. gyventojų.\nValstybės plotas: ${formattedArea} km², plotas tenkantis vienam gyventojui: ${areaPerPerson.toFixed(2)} m²\n-----------------------------------------------\n`
-        jsDiv.appendChild(pElem)
-    }
-    // pElem.innerText= 'tekst'
-    // jsDiv.appendChild(pElem)
-}

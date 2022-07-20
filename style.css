@@ -22,7 +22,25 @@ body {
     padding: 0 40px;
 }
 
-h1 {
+h1, h3 {
     margin: 20px auto;
     text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.btn {
+    margin-bottom: 30px;
+    width: 160px;
+    height: 50px;
+    font-size: 1rem;
+    background: crimson;
+    border: none;
+    font-weight: 600;
+    color: #f4f4f4;
+    border-radius: 5px;
+    letter-spacing: 0.1rem;
 }
